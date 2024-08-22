@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Mobile Store Pitch Deck</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            font-weight: 600;
+            color: #0A7373;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            font-weight: 600;
+            color: #0A7373;
+            margin-bottom: 25px;
+        }
+
+        p, li {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #E7F9F9;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #0A7373;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #D6F5F5;
+        }
+
+        .details {
+            display: none;
+            padding-top: 20px;
+            text-align: left;
+        }
+
+        .details.active {
+            display: block;
+        }
+
+        .back-button {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            background-color: #0A7373;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #085A5A;
+        }
+
+        .back-button.active {
+            display: inline-block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            p, li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Store Pitch Deck</h1>
+
+        <div id="welcome-message">
+            <h2>Welcome to Our Store</h2>
+            <img src="welcome.jpg
+            
+            
+            
+        
+    
+            
+            " alt="Welcome Image">
+        </div>
+
+        <ul id="key-points" style="display: none;">
+            <li onclick="showDetails('problem')">Problem</li>
+            <li onclick="showDetails('solution')">Solution</li>
+            <li onclick="showDetails('market')">Market Size & Opportunity</li>
+            <li onclick="showDetails('product')">Product</li>
+            <li onclick="showDetails('team')">Team</li>
+            <li onclick="showDetails('competition')">Competition</li>
+            <li onclick="showDetails('financials')">Financials</li>
+        </ul>
+
+        <!-- Detail Sections -->
+        <div id="problem" class="details">
+            <h2>Problem</h2>
+            <img src="prob.jpg" alt="Problem Image">
+            <p>Consumers face challenges in finding reliable, affordable mobile devices and accessories, often dealing with limited options, subpar customer service, and lack of product knowledge.</p>
+        </div>
+
+        <div id="solution" class="details">
+            <h2>Solution</h2>
+            <img src="sol.jpg" alt="Solution Image">
+            <p><strong>Our Mobile Store</strong> provides a one-stop-shop for the latest mobile devices, accessories, and expert guidance. We ensure a seamless shopping experience, from in-store service to after-sales support.</p>
+        </div>
+
+        <div id="market" class="details">
+            <h2>Market Size & Opportunity</h2>
+            <img src="mark.jpg" alt="Market Image">
+            <p>The global smartphone market is expected to reach $790 billion by 2027, driven by increasing consumer demand for innovative devices and services.</p>
+        </div>
+
+        <div id="product" class="details">
+            <h2>Product</h2>
+            <img src="prod.jpg" alt="Product Image">
+            <p>We offer a wide range of products, including smartphones, tablets, accessories, and repair services. Our curated selection ensures quality and value for every customer.</p>
+        </div>
+
+        <div id="team" class="details">
+            <h2>Team</h2>
+            <img src="team.jpg" alt="Team Image">
+            <ul>
+                <li><strong>Anisha</strong> - CEO & Co-Founder (10+ years in mobile retail)</li>
+                <li><strong>Haroon</strong> - CTO & Co-Founder (Tech enthusiast with a background in retail management)</li>
+                <li><strong>Safa Mir</strong> - Head of Sales (Former sales director at a major electronics retailer)</li>
+            </ul>
+        </div>
+
+        <div id="competition" class="details">
+            <h2>Competition</h2>
+            <img src="comp.jpg" alt="Competition Image">
+            <p>We compete with online retailers and other mobile stores, but differentiate ourselves through personalized service, a curated product selection, and expert staff.</p>
+        </div>
+
+        <div id="financials" class="details">
+            <h2>Financials</h2>
+            <img src="fim.jpg" alt="Financials Image">
+            <p>Our projected revenue for the first year is $5 million, with a 50% year-over-year growth rate. An initial investment of $1.5 million is required to expand our product range and enhance our online presence.</p>
+        </div>
+
+        <!-- Back Button -->
+        <button id="back-button" class="back-button" onclick="showKeyPoints()">Back</button>
+    </div>
+
+    <script>
+        // Show welcome message first, then key points
+        setTimeout(() => {
+            document.getElementById('welcome-message').style.display = 'none';
+            document.getElementById('key-points').style.display = 'block';
+        }, 2000);
+
+        // Function to show details of each key point
+        function showDetails(id) {
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+
+            document.getElementById('key-points').style.display = 'none';
+            document.getElementById('back-button').classList.add('active');
+        }
+
+        // Function to show key points again and hide the detail
+        function showKeyPoints() {
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.classList.remove('active'));
+
+            document.getElementById('key-points').style.display = 'block';
+            document.getElementById('back-button').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
